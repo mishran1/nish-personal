@@ -4,6 +4,7 @@ angular.module("contactsApp", ['ngRoute'])
             .when("/", {
                 templateUrl: "list.html",
                 controller: "ListController",
+                title: "Home — Nish Mishra",
                 resolve: {
                     contacts: function(Contacts) {
                         return Contacts.getContacts();
@@ -70,8 +71,13 @@ angular.module("contactsApp", ['ngRoute'])
                 });
         }
     })
-    .controller("ListController", function(contacts, $scope) {
+    .controller("ListController", function(contacts, $scope, $rootScope) {
         $scope.contacts = contacts.data;
+
+        $rootScope.$on("$routeChangeSuccess", function (event, current, previous, rejection) {
+                console.log($scope, $rootScope, $route, $location);
+                $rootScope.pageTitle = $route.current.title
+        });
     })
     .controller("NewContactController", function($scope, $location, Contacts) {
         $scope.back = function() {
