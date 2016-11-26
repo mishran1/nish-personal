@@ -1,3 +1,4 @@
+/* GLOBAL STUFF */
 /* Set font family for entire app */
 * {
 	font-family: "Avenir";
@@ -9,11 +10,7 @@ body {
 	background-color: #216869;
 }
 
-/* Set white font color for navbar */
-a, .navbar-brand {
-	color: white !important;
-}
-
+/* NAVBAR STUFF */
 /* Set background, border color & width for navbar */
 .navbar.navbar-default.navbar-fixed-top {
 	background-color: #49A078;
@@ -21,21 +18,23 @@ a, .navbar-brand {
 	border-bottom-width: 4px;
 }
 
-.nav.navbar-nav {
-	float: right;
+/* Set white font color for navbar */
+a, .navbar-brand {
+    color: white !important;
 }
 
-.navbar-brand {
-	margin-left: -45px !important;
-	font-size: 180%;
-	font-weight: bold;
+.fa.fa-spinner {
+    font-size: 150%;
 }
 
+/* Navbar drop shadow */
 .shadow {
-	-webkit-box-shadow: 0 4px 4px -2px #000000;
+    -webkit-box-shadow: 0 4px 4px -2px #000000;
     -moz-box-shadow: 0 4px 4px -2px #000000;
     box-shadow: 0 8px 8px -8px #000000;
 }
+
+/* MEANWHILE TEXT */
 
 #construction {
     text-shadow: 1.5px 1.5px 0px rgba(0,0,0,0.8);
