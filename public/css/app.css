@@ -38,6 +38,14 @@ a, .navbar-brand {
 }
 
 #construction {
+    text-shadow: 1.5px 1.5px 0px rgba(0,0,0,0.8);
+    padding: 40px; 
+    font-size: 300%; 
+    text-align-last: center; 
+    text-align: justify; 
+    color: white; 
+    font-family: Avenir;
+
     -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 5s; /* Firefox < 16 */
         -ms-animation: fadein 5s; /* Internet Explorer */
