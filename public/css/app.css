@@ -21,8 +21,14 @@ a, .navbar-brand {
 	border-bottom-width: 4px;
 }
 
+.nav.navbar-nav {
+	float: right;
+}
+
 .navbar-brand {
 	margin-left: -45px !important;
+	font-size: 180%;
+	font-weight: bold;
 }
 
 .shadow {
