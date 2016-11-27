@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     
-    <title>Ether | Home</title>
+    <title>Home | Dev &amp; Analytics</title>
     
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -27,13 +27,21 @@
     <script src="js/ga.js"></script>
     <!-- Font Awesome script -->
     <script src="https://use.fontawesome.com/9e6b463db0.js"></script>
+    <!-- Favicon file just in case -->
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
 
   </head>
 
   <body>
     <nav class="navbar navbar-default navbar-fixed-top shadow">
-      <div class="container">
+      <!-- Use fluid so header spans full width of viewport -->
+      <div class="container-fluid">
         <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span> 
+            </button>
           <a href="#/"><div class="navbar-brand"><i class="fa fa-spinner"></i></div></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
@@ -49,6 +57,6 @@
     <!-- Dynamically render templates -->
     <div class="container" style="display: none;" ng-view>
     </div>
-    <h1 id="construction">Nish is developing this content<br>as quickly as humanly possible.<br><br>In the meantime, get in touch at:<br><a style="text-decoration: underline;" href="mailto:hello@nishmishra.com">hello@nishmishra.com</a><br><br>Stay tuned!</h1>
+    <h1 id="construction">We are developing this content<br>as quickly as humanly possible.<br><br>For dev or analytics inquiries in<br>the meantime, get in touch at:<br><a href="mailto:hello@nishmishra.com">hello@nishmishra.com</a><br><br>Stay tuned!</h1>
   </body>
 </html>

@@ -4,7 +4,7 @@
 	font-family: "Avenir";
 }
 
-/* Set background color of main and padding */
+/* Set padding and background color of main */
 body {
 	padding-top: 70px;
 	background-color: #216869;
@@ -23,6 +23,12 @@ a, .navbar-brand {
     color: white !important;
 }
 
+/* Set white color for toggle bars */
+.icon-bar {
+    background-color: white !important;
+}
+
+/* Increase logo size */
 .fa.fa-spinner {
     font-size: 150%;
 }
@@ -35,13 +41,17 @@ a, .navbar-brand {
 }
 
 /* MEANWHILE TEXT */
+/* Underline email link*/
+h1 a {
+    text-decoration: underline;
+}
 
+/* Main body text styling */
 #construction {
     text-shadow: 1.5px 1.5px 0px rgba(0,0,0,0.8);
     padding: 40px; 
-    font-size: 300%; 
+    font-size: 4vw; 
     text-align-last: center; 
-    text-align: justify; 
     color: white; 
     font-family: Avenir;
 
@@ -79,3 +89,11 @@ a, .navbar-brand {
 @-o-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+}
+
+/* Scale up text size on viewport shrink */
+@media screen and (max-width: 950px) {
+    #construction {
+        font-size: 5vw;
+    }
+}
